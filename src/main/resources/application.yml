@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    open-in-view: true
+  datasource:
+    main:
+      jdbc-url: jdbc:h2:tcp://localhost/~/jpashop
+      username: sa
+      password:
+      driver-class-name: org.h2.Driver
+
+    second:
+      jdbc-url: jdbc:h2:tcp://localhost/~/test
+      username: sa
+      password:
+      driver-class-name: org.h2.Driver
+logging:
+  level:
+    sql: debug
